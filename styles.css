@@ -134,13 +134,14 @@ h2 {
 /* ---------AQUI COMIENZAN LAS PROPIEDADES DEL MAIN ---------- */
 
 .greeting {
-  background-color: #5995da;
-  width: 500px;
-  height: 100px;
-  border: 0 solid black;
-  margin: 200px;
+  display: flex;
+  background-color:rgb(184, 205, 205);
+  width: 300px;
+  height: 60px;
+  border: 2px solid rgb(161, 153, 144);
+  margin: 100px;
   padding: 10px;
-  align-items: end;
+  align-items:end;
   flex-direction: row;
   
 

@@ -33,7 +33,7 @@ let gusto = "EL CICLISMO";
 
 let parrafo1 = document.querySelector(".parrafo2");
 function cambiarTexto(nombre1, ciudad, gusto) {
-  let contenido =`Mi nombre es ${nombre1}, profesional en ingeniería de sistemas, presto mis servicios de asesoría y consultoría con mucha experiencia en administración de proyectos de tecnologia. Naci en ${ciudad}, la tierra mas hermosa de Colombia. Me apasiona mucho programar, viajar y ${gusto}`;
+  let contenido =`Soy ${nombre1}, profesional en ingeniería de sistemas, presto mis servicios de asesoría y consultoría con mucha experiencia en administración de proyectos de tecnologia. Naci en ${ciudad}, la tierra mas hermosa de Colombia. Me apasiona mucho programar, viajar y ${gusto}`;
   return contenido;
 }
 
