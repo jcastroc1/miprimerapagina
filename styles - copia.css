@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  background-color: #eeeeee;
+}
+/* ESTILOS GENERALES */
+
+.fuente-acento {
+  color: #b59a61;
+}
+
+nav ul li {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+nav ul li a {
+  color: #eeeeee;
+}
+/* ENCABEZADO */
+
+header {
+  background-color: rgba(34, 33, 31, 0.85);
+  width: 100%;
+}
+
+.logo {
+  display: inline-block;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 50px;
+  font-weight: bold;
+}
+
+header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+}
+
+header nav {
+  height: 80px;
+  float: right;
+}
+
+nav ul.menu {
+  float: right;
+}
+
+nav ul.menu li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul.menu li a {
+  color: #eee;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 7px 7px;
+}
+
+/* MENU */
+
+.checkbtn {
+  font-size: 25px;
+  color: rgb(186, 5, 5);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+  /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+  header {
+    background-color: burlywood;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  .navbar {
+    height: 0vh;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #2c3e50;
+    text-align: center;
+
+    transition: all 0.5s;
+    overflow: hidden;
+  }
+
+  .navbar ul.menu {
+    float: none;
+    display: block;
+    width: 174px;
+    margin: 0 auto;
+    opacity: 0;
+  }
+
+  .navbar ul.menu li a:hover {
+    color: #b59a61;
+  }
+  /* ACTIVE */
+  .navbar.active {
+    height: 100vh;
+  }
+
+  .navbar.active ul.menu {
+    opacity: 1;
+  }
+}
+
+
+/* ---------AQUI COMIENZAN LAS PROPIEDADES DEL MAIN ---------- */
+
+.acerca-de a {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  font-size: 20px;    
+}
+
+.seccion-1 {
+padding: 6em 0 0 0;
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+flex-direction:row;
+}
+
+.acerca-de {
+flex-direction: row;
+justify-content:space-evenly;
+width: 100%;
+background-color:white
+padding: 2em;
+}
+
+.card {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.card p {
+font-size: 20px;
+color:rgb(7, 7, 50);
+text-align: center;
+}
+
+.seccion-2 {
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  padding: 100px 0 200px 0;
+  margin-top: 100px;
+  border: 1px solid white;
+}
+
+.photo-grid img{
+  position: relative;
+  top: 10px;
+  left: 10px;
+  border: 2px solid red;
+  width: 400px;
+}
+
+.seccion-proyectos {
+display: flex;
+flex-wrap: wrap;
+}
+
+.card-container{
+width: 95%;
+display: flex;
+flex-direction:row;
+justify-content:center;
+}
+
+.card1 {
+/*border: 4px dotted teal;
+border-radius: 5%; */
+
+padding: 5px;
+height: 400px;
+max-width: 500px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+font-size: 20px;
+}
+
+.text {
+
+text-align: center;   
+}
+
+footer {
+  background-color: rgb(118, 80, 74);
+  width: 100%;
+  border: 2px solid white;
+  margin: 100px 0 0 0;
+  padding: 20px;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  color:#eeeeee;
+}
+
+footer a i { 
+  justify-content: flex-end;
+  color: rgb(226, 45, 45);
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+/* ESTILOS PARA PANTALLAS MAS PEQUEÑAS (hasta 768px) */
+
+@media (max-width: 768px) {
+header { 
+background-color:rgb(118, 80, 74);
+}
+}
+
+@media (min-width: 768) {
+header {
+  background-color: red;
+}
+}
+
+@media(min-width: 768px) {
+.acerca-de{
+    width: 45%;
+}
+}
+
+@media(min-width: 1024px) {
+.acercad-de {
+    width: 30%;
+}
+}
+
+@media(min-width: 768px) {
+.card-container {
+    width: 45%;
+}
+}
+
+@media(min-width: 1024px) {
+.card-container {
+    width: 30%;
+}
+}
+
+
+
+
