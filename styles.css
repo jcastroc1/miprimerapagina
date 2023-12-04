@@ -72,10 +72,12 @@ h2 {
 }
 
 /* MENU */
-
+#check {
+  display: none;
+}
 .checkbtn {
   font-size: 25px;
-  color: rgb(186, 5, 5);
+  color: rgb(2, 2, 48);
   float: right;
   line-height: 80px;
   margin-right: 40px;
@@ -133,18 +135,6 @@ h2 {
 
 /* ---------AQUI COMIENZAN LAS PROPIEDADES DEL MAIN ---------- */
 
-.greeting {
-  display: flex;
-  background-color:rgb(184, 205, 205);
-  width: 300px;
-  height: 60px;
-  border: 2px solid rgb(161, 153, 144);
-  margin: 100px;
-  padding: 10px;
-  align-items:end;
-  flex-direction: row;
-  
-
 }
 .acerca-de a {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
@@ -194,7 +184,7 @@ text-align: center;
 .photo-grid img{
   position: relative;
   top: 10px;
-  left: 10px;
+  left: 1px;
   border: 2px solid red;
   width: 1300px;
   height: 400px;
